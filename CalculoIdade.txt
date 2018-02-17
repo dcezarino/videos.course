@@ -1,0 +1,37 @@
+algoritmo "CalculoIdade"
+var
+   AA, AN, ID: Inteiro
+
+Procedimento ImprimeCab()
+Inicio
+       EscrevaL("===========================")
+       EscrevaL("     CALCULAR IDADE        ")
+       EscrevaL("===========================")
+FimProcedimento
+
+Procedimento ImprimeRod()
+Inicio
+       EscrevaL("===========================")
+       EscrevaL("     IDADE CALCULADA       ")
+       EscrevaL("===========================")
+FimProcedimento
+
+
+inicio
+      ImprimeCab()
+      Escreva("Informe o ano que estamos: ")
+      Leia(AA)
+      Escreva("Informe seu ano de nascimento: ")
+      Leia(AN)
+      
+      ID <- AA - AN
+      
+      ImprimeRod()
+      Escreva("Em ", AA, " voce tera ", ID, " anos")
+      Se (ID > 21) entao
+         Escreva(" e ja tera atingido a maioridade")
+      senao
+         Escreva(" e nao tera atingido a maioridade")
+      FimSe
+      
+fimalgoritmo

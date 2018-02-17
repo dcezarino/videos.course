@@ -1,0 +1,22 @@
+algoritmo "ParaouImparProcedimento"
+
+var
+   N: Inteiro
+
+// Recebe o valor de N
+Procedimento ParOuImpar(V: Inteiro)
+inicio
+      Se (V%2 = 0) entao
+             EscrevaL("O numero ", V, " e PAR")
+      senao
+             EscrevaL("O numero ", V, " e IMPAR")
+      Fimse
+FimProcedimento
+
+inicio
+      EscrevaL("Digite um numero: ")
+      Leia(N)
+      ParOuImpar(N)
+
+
+fimalgoritmo

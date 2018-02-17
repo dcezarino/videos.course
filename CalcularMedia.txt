@@ -1,0 +1,37 @@
+algoritmo "CalcularMedia"
+
+var
+   N1, N2, M: Real
+
+inicio
+      Escreval("=====================")
+      Escreval("ESCOLA JAVALI CANSADO")
+      Escreval("=====================")
+      
+      Escreva("Primeira Nota: ")
+      Leia(N1)
+         
+      Escreva("Segunda Nota: ")
+      Leia(N2)
+      
+      M <- (N1 + N2) / 2
+      
+      Escreval("A media do aluno foi ", M:4:2)
+      
+      Se (M >= 7) entao
+         Escreval("===============")
+         Escreval("ALUNO APROVADO - ", M:4:2)
+         Escreval("===============")
+      senao
+          Se (M >= 5) e (M <= 7) entao
+             Escreval("================")
+             Escreval("ALUNO EM RECUPERACAO - ", M:4:2)
+             Escreval("================")
+          senao
+             Escreval("================")
+             Escreval("ALUNO REPROVADO - ", M:4:2)
+             Escreval("================")
+          FimSe
+     FimSe
+
+fimalgoritmo

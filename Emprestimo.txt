@@ -1,0 +1,27 @@
+algoritmo "Emprestimo"
+
+var
+   V, C, NP, CALC, SOMA: Real
+   P: Caractere
+
+inicio
+      Escreva("Digite o valor do emprestimo R$ ")
+      Leia(V)
+      
+      C <- V * (20/100)
+      SOMA <- V + C
+      
+      Escreva("Deseja parcelar o valor R$, ", SOMA, " [S/N]?")
+      Leia(P)
+      
+      Se (P = "S") entao
+         Escreva("Informe o numero de parcelas: ")
+         Leia(NP)
+         
+         CALC <- SOMA/NP
+         Escreva("O valor mensal a pagar da compra parcelada em ", NP, " vezes sera R$ ", CALC:5:2)
+      senao
+         Escreva("Cliente nao deseja parcelar a compra no valor de R$ ", SOMA:5:2)
+      Fimse
+      
+fimalgoritmo

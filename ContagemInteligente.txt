@@ -1,0 +1,45 @@
+algoritmo "ContagemInteligente"
+
+var
+   NI, NF: Inteiro
+   
+
+inicio
+      Escreval("--------------------")
+      Escreval("CONTAGEM INTELIGENTE")
+      Escreval("--------------------")
+
+      Escreva("Inicio: ")
+      Leia(NI)
+      
+      Escreva("Fim: ")
+      Leia(NF)
+
+      // Se NI for menor que NF executa
+      Se (NI < NF) entao
+         Escreval("--------")
+         Escreval("CONTANDO")
+         Escreval("--------")
+         
+         // Enquanto NI for menor e igual a NF executa
+         Enquanto (NI <= NF) faca
+                  Escreval(NI,"..")
+                  NI <- NI + 1
+         FimEnquanto
+         senao
+              // Caso contrario Se NI for maior que NF executa
+              Se (NI > NF) entao
+                 Escreval("--------")
+                 Escreval("CONTANDO")
+                 Escreval("--------")
+
+                 // Enquanto NI for maior e igual a NF executa
+                 Enquanto (NI >= NF) faca
+                          Escreval(NI,"..")
+                          NI <- NI - 1
+                 FimEnquanto
+                 
+              FimSe
+         FimSe
+
+fimalgoritmo

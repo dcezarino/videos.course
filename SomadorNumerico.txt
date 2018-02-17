@@ -1,0 +1,38 @@
+algoritmo "somadorNumerico"
+
+var
+   contador, n, s, maior, menor: inteiro
+   
+inicio
+      contador <- 1
+
+      enquanto (contador <= 5) faca
+          escreva("Digite o", contador, "º valor: ")
+          leia(n)
+
+          // verifica o maior valor
+          se (n > maior) entao
+             maior <- N
+          fimSe
+
+          // garante que, na primeira iteração (contador = 1), e somente nela,
+          // o valor da variável [menor], que inicialmente é 0,
+          // seja substituído por um valor qualquer digitado pelo usuário
+          se(contador = 1) entao
+             menor <- n
+          fimSe
+
+          // verifica se o menor valor
+          se (n < menor) entao
+             menor <- n
+          fimSe
+
+          s <- s + n
+          contador <- contador + 1
+      fimEnquanto
+
+   escreval("A soma de todos os números que você digitou é", s)
+   escreval("O maior número digitado foi", maior)
+   escreval("O menor número digitado foi", menor)
+
+fimAlgoritmo

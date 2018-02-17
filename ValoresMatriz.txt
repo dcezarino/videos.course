@@ -1,0 +1,31 @@
+algoritmo "ValoresMatriz"
+
+var
+   m: vetor[1..4, 1..4] de Inteiro
+   l, c, sDP: Inteiro
+
+inicio
+      sDP <- 0
+      Para l <- 1 ate 4 faca
+           Para c <- 1 ate 4 faca
+                Escreva("Digite o valor da posicao [", l, ",", c, "]: ")
+                Leia(m[l,c])
+                
+                Se (l = c) entao
+                   sDP <- sDP + m[l,c]
+                FimSe
+                
+           FimPara
+      FimPara
+
+      Para l <- 1 ate 4 faca
+           Para c <- 1 ate 4 faca
+                Escreva(m[l,c]:4)
+           FimPara
+           EscrevaL()
+      FimPara
+      
+      EscrevaL("A soma dos valores da Diagonal Princiapal e ", sDP)
+
+
+fimalgoritmo

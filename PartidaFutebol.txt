@@ -1,0 +1,39 @@
+algoritmo "PartidaFutebol"
+
+var
+   G1, G2, D: Inteiro
+
+inicio
+      EscrevaL("------------------------")
+      EscrevaL("    BANGU X MADUREIRA   ")
+      EscrevaL("------------------------")
+      
+      Escreva("Quantos Gols Bangu fez? ")
+      Leia(G1)
+      
+      Escreva("Quantos Gols Madureira fez? ")
+      Leia(G2)
+      
+      Se (G1 > G2) entao
+         D <- G1 - G2
+      senao
+         D <- G2 - G1
+      FimSe
+      
+      EscrevaL("------------------------")
+      EscrevaL("DIFERENCA:", D)
+      
+      Escolha D
+              Caso 0
+                   EscrevaL("EMPATE")
+              Caso 1,2,3
+                   EscrevaL("STATUS NORMAL")
+              Caso 4,5,6,7
+                   EscrevaL("STATUS GOLEADA")
+              OutroCaso
+                   EscrevaL("RESULTADO IRREAL")
+                   EscrevaL("TEM CERTEZA QUE DIGITOU O NUMERO DE GOLS CORRETO? ")
+      FimEscolha
+      EscrevaL("------------------------")
+
+fimalgoritmo

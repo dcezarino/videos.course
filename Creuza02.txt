@@ -1,0 +1,15 @@
+algoritmo "Creuza02"
+
+var
+   dolares, reais: Real
+
+
+inicio
+      Escreval("Quantos reais eu tenho? R$ ")
+      Leia(reais)
+      
+      dolares <- reais / 2.20
+      
+      Escreval ("Posso ter US$ ", dolares)
+
+fimalgoritmo

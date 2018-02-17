@@ -1,0 +1,19 @@
+algoritmo "Creuza05"
+
+var valor, parcelas, total_juros, total_parc: Real
+
+inicio
+
+      Escreva("O valor do emprestimo? R$: ")
+      Leia(valor)
+      
+      total_juros <- (valor*20)/100
+
+      Escreva("Quantidade de parcelas? ")
+      Leia(parcelas)
+      
+      total_parc <- (valor + total_juros)/parcelas
+      
+      Escreva("O valor do emprestimo em ", parcelas, " parcelas será ", total_parc)
+
+fimalgoritmo

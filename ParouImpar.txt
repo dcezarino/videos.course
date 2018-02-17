@@ -1,0 +1,24 @@
+algoritmo "ParouImpar"
+var
+   N1: Inteiro
+
+procedimento ImprimeCab()
+Inicio
+      EscrevaL("========================")
+      EscrevaL("      PAR OU IMPAR?     ")
+      EscrevaL("========================")
+FimProcedimento
+
+
+inicio
+      ImprimeCab()
+      Escreva("Digite um numero: ")
+      Leia(N1)
+      
+      Se (N1 % 2 = 0) entao
+         Escreva("O numero ",N1, " e PAR")
+      senao
+         Escreva("O numero ", N1, " e IMPAR")
+      FimSe
+
+fimalgoritmo

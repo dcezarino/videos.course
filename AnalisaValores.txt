@@ -1,0 +1,45 @@
+algoritmo "AnalisaValores"
+
+var
+   Num1, Cont, NumNulo, NumPar, Soma, D : Inteiro
+   Media: Real
+
+inicio
+
+      // Seta as variaveis
+      Soma <- 0
+      D <- 0
+      NumPar <- 0
+      NumNulo <- 0
+
+      Para Cont <- 1 ate 5 faca
+               Escreva("Digite o ", Cont, "º", " valor: ")
+               Leia(Num1)
+               Soma <- Soma + Num1
+
+               // Se o a divisao for exatada soma + 1
+               Se (Num1%5=0) entao
+                  D <- D + 1
+               Fimse
+
+               // Se o a divisao for exatada soma o numero digitado
+               Se (Num1%2 = 0) entao
+                  NumPar <- NumPar + Num1
+               FimSe
+
+               // Se o numero digitado for igual a 0 soma + 1
+               Se (Num1 = 0) entao
+                  NumNulo <- NumNulo + 1
+               Fimse
+
+               // Contador
+               Cont <- Cont + 1
+      FimPara
+      Media <- Soma / 5
+      EscrevaL("A soma entre os valores e ", Soma)
+      EscrevaL("A media entre os valores e ", Media)
+      EscrevaL("A quantidade de numeros divisiveis por cinco e ", D)
+      EscrevaL("A quantidade de numeros nulos e ", NumNulo)
+      EscrevaL("A soma dos numeros pares e ", D)
+
+fimalgoritmo

@@ -1,0 +1,16 @@
+algoritmo "Repeat1to10"
+
+var
+   C, N, R: Inteiro
+
+inicio
+      C <- 1
+      Escreva("Quer a tabuada de qual número? ")
+      Leia(N)
+         Repita
+            R <- N*C
+            Escreval(N, " x ", C, " = ", R)
+            C <- C +1
+         Ate(C > 10)
+
+fimalgoritmo

@@ -1,0 +1,30 @@
+algoritmo "CalcularIdade"
+
+var
+   AA, AN, I: Inteiro
+
+inicio
+
+      Escreval("==========================")
+      Escreval("DEPARTAMENTO DE TRANSITO")
+      Escreval("==========================")
+      
+      Escreva("Ano Atual (yyyy): ")
+      Leia(AA)
+      
+      Escreva("Ano de Nascimento (yyyy): ")
+      Leia(AN)
+      
+      I <- AA - AN
+      
+      Se (I >= 18) entao
+         Escreval("==========================")
+         Escreval("APTO A TIRAR CARTA")
+         Escreval("==========================")
+      senao
+         Escreval("==========================")
+         Escreval("INAPTO A TIRAR CARTA")
+         Escreval("==========================")
+      FimSe
+      
+fimalgoritmo

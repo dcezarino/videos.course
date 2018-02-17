@@ -1,0 +1,20 @@
+algoritmo "SomaFuncao"
+
+var
+   X, Y, Res: Inteiro
+
+// Funcao recebe os valores como parametros de X,Y
+Funcao Soma(A, B: Inteiro):Inteiro
+inicio
+      // Soma os 2 valores e retorna o valor na  variavel Res
+      Retorne A + B
+FimFuncao
+
+inicio
+      Escreva("Digite o primeiro valor: ")
+      Leia(X)
+      Escreva("Digite o segundo valor: ")
+      Leia(Y)
+      Res <- Soma(X, Y)
+      EscrevaL("A soma entre", X, " e", Y, " e", Res)
+fimalgoritmo

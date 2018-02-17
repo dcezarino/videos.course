@@ -1,0 +1,31 @@
+algoritmo "SequenciaFibonacciFuncao"
+
+var
+   I, T1, T2, T3: Inteiro
+
+Funcao ProximoFibonacci(var N1, N2: Inteiro): Inteiro
+var
+   N3: Inteiro
+inicio
+           N3 <- N1 + N2
+           N1 <- N2
+           N2 <- N3
+           Retorne N3
+FimFuncao
+
+inicio
+      // Imprime o primeiro numero
+      T1 <- 0
+      EscrevaL(T1)
+      
+      // Imprime o segundo numero
+      T2 <- 1
+      EscrevaL(T2)
+      
+      // Executa a somatoria dos ultimos dois valores impressos
+      Para I <- 3 ate 5 faca
+         T3 <-  ProximoFibonacci(T1, T2)
+         EscrevaL(T3)
+      FimPara
+
+fimalgoritmo

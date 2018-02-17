@@ -1,0 +1,55 @@
+algoritmo "Boletim"
+
+var
+   nome, melhor_aluno: Caractere
+   nota, maior, menor: Real
+   C, A: Inteiro
+
+inicio
+
+      C <- 1
+      Escreval("-------------------------")
+      Escreval(" ESCOLA MELHOR IMPOSSIVEL")
+      Escreval("-------------------------")
+
+      Escreva("Quantos alunos a turma tem? ")
+      Leia(A)
+
+      Enquanto (C <= A) faca
+          Escreval("Aluno ", C, ": ")
+
+          Escreva("Digite o nome do aluno: ")
+          Leia(nome)
+          
+          Escreva("Digite a nota do Aluno " , Nome , ": ")
+          Leia(nota)
+          
+
+          // verifica o maior valor
+          se (nota > maior) entao
+             maior <- nota
+             melhor_aluno <- nome
+          fimSe
+
+          // garante que, na primeira iteração (contador = 1), e somente nela,
+          // o valor da variável [menor], que inicialmente é 0,
+          // seja substituído por um valor qualquer digitado pelo usuário
+          se(C = 1) entao
+             menor <- nota
+          fimSe
+
+          // verifica se o menor valor
+          se (nota < menor) entao
+             menor <- nota
+          fimSe
+
+          C <- C + 1
+       FimEnquanto
+       
+      Escreval("---------------------------------------------------------")
+      Escreval("O melhor aproveitamento foi de ", melhor_aluno, " com a  ")
+      Escreval("nota ", maior)
+      Escreval("---------------------------------------------------------")
+      Escreva("Menor nota foi ", menor)
+      
+fimalgoritmo

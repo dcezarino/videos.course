@@ -1,0 +1,39 @@
+algoritmo "SuperContador"
+
+var
+   M,CN: Inteiro
+
+inicio
+
+      EscrevaL("|    M E N U    |")
+      EscrevaL("=================")
+      EscrevaL("| [1] De 1 a 10 |")
+      EscrevaL("| [2] De 10 a 1 |")
+      EscrevaL("| [3] Sair      |")
+      EscrevaL("=================")
+      Leia(M)
+
+      // Se digitei opcao 1 executa
+      Se (M = 1) entao
+         CN <- 1
+         Repita
+               Escreva(CN, ".. ")
+               CN <- CN + 1
+         Ate(CN > 10)
+      senao
+      // Senao se digitei opcao 2 executa
+           Se (M = 2) entao
+              CN <- 10
+                Repita
+                      Escreva(CN, ".. ")
+                      CN <- CN - 1
+                Ate(CN < 1)
+         senao
+         //Senao se digitei opcao 3 executa e finaliza o programa
+              Se (M = 3) entao
+                 Escreva("SAINDO.. ")
+              Fimse
+         Fimse
+      Fimse
+
+fimalgoritmo

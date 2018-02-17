@@ -1,0 +1,15 @@
+algoritmo "Creuza04"
+
+var
+   valor, imposto: Real
+
+inicio
+
+      Escreva("Qual o valor do produto? ")
+      Leia(valor)
+      
+      imposto <- (valor*60)/100
+      
+      Escreva("O imposto será de US$: ", imposto:5:2)
+
+fimalgoritmo

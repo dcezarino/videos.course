@@ -1,0 +1,17 @@
+algoritmo "CalcularParImpar"
+
+var
+num: Inteiro
+
+inicio
+
+      Escreva("Informe um número: ")
+      Leia(num)
+
+      Se (num % 2 = 0) entao
+         Escreval ("Numero", num, " e par.")
+      senao
+         Escreval ("Numero", num, " e impar.")
+      FimSE
+
+fimalgoritmo

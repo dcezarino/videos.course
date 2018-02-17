@@ -1,0 +1,18 @@
+algoritmo "Repita"
+
+var
+   n, s, maior, menor: inteiro
+   resp: Caractere
+
+inicio
+      S <- 0
+      Repita
+          escreva("Digite o valor ==> ")
+          leia(n)
+          s <- s + n
+          escreva("Voce quer continuar? [S/N] ")
+          Leia(resp)
+      Ate(resp = "N")
+      Escreval("A soma de todos os números que você digitou é", s)
+   
+fimAlgoritmo

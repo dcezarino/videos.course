@@ -1,0 +1,27 @@
+algoritmo "OperadoresNumericos"
+
+var
+   A, R, RQ, IRQ, GP, S: real
+
+inicio
+      A <- Abs(-50)
+      Escreval("Valor Absoluto: ", A)
+
+      R <- Exp(9,5)
+      Escreval("Exponenciacao: ", R)
+      
+      RQ <- RaizQ(81)
+      Escreval("Raiz Quadrada: ", RQ)
+
+      IRQ <- Int(RaizQ(200))
+      Escreval("Inteiro Raiz Quadrada: ", IRQ)
+      
+      GP <- GraupRad(90))
+      Escreval("Grau para Radianos: ", GP)
+      
+      S <- Sen(GraupRad(90))
+      Escreval("Seno: ", S)
+
+
+
+fimalgoritmo
